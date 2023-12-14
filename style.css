@@ -1,0 +1,13 @@
+.container{
+    display: flexbox;
+    flex-direction: row;
+}
+
+label, input{
+    display: block;
+}
+
+.sides{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,6 +1,37 @@
 <!DOCTYPE html>
+
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
 <html>
-    <body>
-        <h1>Hello There</h1>
-    </body>
+
+<body>
+    <h1>Hello There</h1>
+    <div class="container" id="container">
+        <div>
+            <label for="username">Name</label>
+            <input id="username" type="text" placeholder="Your Name" required />
+        </div>
+        <div class="sides">
+            <div>
+                <label for="phone">Phone</label>
+                <input id="phone" type="text" placeholder="Your Phone" required  />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Your Email" required />
+            </div>
+        </div>
+        <div>
+            <label for="salary">Salary</label>
+            <input id="salary" type="number" placeholder="Your Salary" />
+        </div>
+        <button onclick="validateUser()">Submit</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
 </html>
